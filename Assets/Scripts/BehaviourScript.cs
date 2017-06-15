@@ -5,41 +5,48 @@ using UnityEngine;
 public class BehaviourScript : MonoBehaviour {
 	int xDirection = 1;
 	int zDirection = 1;
-	int flowerBound = 1;
-	int beamBound = 7;
-	GameObject[] flowers;
-	GameObject[] beams;
+	//int flowerBound = 1;
+	//int beamBound = 9;
+	//GameObject[] flowers;
+	GameObject[] secondaryGantry;
+
+
+    // Tags for finding the objects in the model.
+    private string FLOWER_TAG = "flowers";
+    private string PRIMARY_GANTRY_TAG = "primaryGantry";
+
 	Vector3 flowerMoveVector;
 	Vector3 beamMoveVector;
+
 	int temp = 0;
 	// Use this for initialization
 	void Start () {
 		flowerMoveVector = new Vector3 (1,0,0);
 		beamMoveVector = new Vector3 (0,0,1);
 
-		flowers = GameObject.FindGameObjectsWithTag ("flowers");
-		beams = GameObject.FindGameObjectsWithTag ("beam");
+        //flowers = GameObject.FindGameObjectsWithTag (FLOWER_TAG);
+        secondaryGantry = GameObject.FindGameObjectsWithTag (PRIMARY_GANTRY_TAG);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (temp < 3) {
-			moveSimple (flowers);
-		}
-		else if (temp > 2 && temp < 6)
-			moveSimple (beams);
+		//if (temp < 3) {
+		//	moveSimple (flowers);
+		//}
+		if (temp > 2 && temp < 6)
+            moveSimple (secondaryGantry);
 	}
 
 	void moveSimple(GameObject[] objects){
 		
 		checkBounds (objects);
-		if (objects [0].CompareTag ("beam")) {
+        if (objects [0].CompareTag (PRIMARY_GANTRY_TAG)) {
 			foreach (GameObject obj in objects) {
 				obj.transform.Translate (beamMoveVector * (3 * Time.deltaTime));
 				print ("switch");
 			}
 		}
-		if (objects [0].CompareTag ("flowers")) {
+        if (objects [0].CompareTag (FLOWER_TAG)) {
 			foreach (GameObject obj in objects) {
 				obj.transform.Translate (flowerMoveVector * (3 * Time.deltaTime));
 			}
@@ -47,7 +54,7 @@ public class BehaviourScript : MonoBehaviour {
 	}
 	void checkBounds(GameObject[] objects){
 		
-		if (objects [0].CompareTag ("beam")) {
+        if (objects [0].CompareTag (PRIMARY_GANTRY_TAG)) {
 			foreach (GameObject obj in objects) {
 				if (obj.transform.position.z > 7.25 || obj.transform.position.z < -6.75) {
 					zDirection *= -1;
@@ -56,7 +63,7 @@ public class BehaviourScript : MonoBehaviour {
 					return;
 				}
 			}
-		} else if (objects [0].CompareTag ("flowers")) {
+        } else if (objects [0].CompareTag (FLOWER_TAG)) {
 			foreach (GameObject obj in objects) {
 				if (obj.transform.localPosition.y > 1 || obj.transform.localPosition.y < -1) {
 					xDirection *= -1;

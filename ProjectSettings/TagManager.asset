@@ -6,6 +6,14 @@ TagManager:
   tags:
   - flowers
   - beam
+  - secondaryGantry
+  - primaryGantry
+  - primaryGantryZPos
+  - primaryGantryZNeg
+  - secondaryGantryTop
+  - secondaryGantryBottom
+  - smallFlower
+  - cable
   layers:
   - Default
   - TransparentFX
