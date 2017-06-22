@@ -30,11 +30,14 @@ public class PrimaryGantry : MonoBehaviour
 
         zBoundPos = mPrimaryGantryPosBound.transform.position.z;
 		zBoundNeg = mPrimaryGantryNegBound.transform.position.z;
+		print (zBoundPos);
+		print (zBoundNeg);
 
         mMovementList = new Vector3 [mPrimaryGantryList.Length];
         for (int i = 0; i < mMovementList.Length; i++){
             mMovementList[i] = beamMoveVector;
             beamMoveVector *= -1;
+			print (i);
         }
 
         mSpeedList = new float[mPrimaryGantryList.Length];
@@ -56,19 +59,20 @@ public class PrimaryGantry : MonoBehaviour
 
         for (int i = 1; i < mPrimaryGantryList.Length; i++){
             GameObject primaryGantry = mPrimaryGantryList[i];
-
+			print (primaryGantry.transform.position.z >= zBoundPos - 2);
             if (primaryGantry.transform.position.z >= zBoundPos - 2){
                 switchDirections = true;
             }
             if (primaryGantry.transform.position.z <= zBoundNeg + 2){
                 switchDirections = true;
             }
-            float difference = primaryGantry.transform.localPosition.z - obj.transform.localPosition.z;
+			float difference = Mathf.Abs(primaryGantry.transform.position.z - obj.transform.position.z);
             if ( difference <= 2){
                 switchDirections = true;
             }
             obj = primaryGantry;
         }
+		print (switchDirections);
         return switchDirections;
     }
 
