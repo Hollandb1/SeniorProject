@@ -14,6 +14,9 @@ TagManager:
   - secondaryGantryBottom
   - smallFlower
   - cable
+  - primaryGantry2
+  - primaryGantry3
+  - primaryGantry4
   layers:
   - Default
   - TransparentFX
@@ -23,10 +26,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - 1
+  - 2
+  - 3
+  - 4
   - 
   - 
   - 
