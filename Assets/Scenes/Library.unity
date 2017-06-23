@@ -707,7 +707,6 @@ GameObject:
   m_Component:
   - component: {fileID: 30581647}
   - component: {fileID: 30581649}
-  - component: {fileID: 30581648}
   m_Layer: 0
   m_Name: 06_20_2017_Large Wings
   m_TagString: Untagged
@@ -730,19 +729,6 @@ Transform:
   m_Father: {fileID: 1287603603}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &30581648
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 30581646}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.9
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: -4.7, y: 0, z: 0}
 --- !u!95 &30581649
 Animator:
   serializedVersion: 3
@@ -2870,7 +2856,6 @@ GameObject:
   m_Component:
   - component: {fileID: 142693756}
   - component: {fileID: 142693758}
-  - component: {fileID: 142693757}
   m_Layer: 0
   m_Name: 06_20_2017_Small Wings
   m_TagString: smallFlower
@@ -2893,19 +2878,6 @@ Transform:
   m_Father: {fileID: 2022675887}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &142693757
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 142693755}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: -3.7, y: 0, z: 0}
 --- !u!95 &142693758
 Animator:
   serializedVersion: 3
@@ -3700,7 +3672,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &189815168
@@ -3719,7 +3691,6 @@ GameObject:
   m_Component:
   - component: {fileID: 190980674}
   - component: {fileID: 190980673}
-  - component: {fileID: 190980675}
   m_Layer: 0
   m_Name: 06_20_2017_Small Wings
   m_TagString: smallFlower
@@ -3760,19 +3731,6 @@ Transform:
   m_Father: {fileID: 2134657717}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &190980675
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 190980672}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: -3.7, y: 0, z: 0}
 --- !u!1 &194782020
 GameObject:
   m_ObjectHideFlags: 0
@@ -8469,7 +8427,6 @@ GameObject:
   m_Component:
   - component: {fileID: 400073094}
   - component: {fileID: 400073096}
-  - component: {fileID: 400073095}
   m_Layer: 0
   m_Name: 06_20_2017_Large Wings
   m_TagString: Untagged
@@ -8492,19 +8449,6 @@ Transform:
   m_Father: {fileID: 2050243361}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &400073095
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 400073093}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.9
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: -4.7, y: 0, z: 0}
 --- !u!95 &400073096
 Animator:
   serializedVersion: 3
@@ -12391,7 +12335,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 6
   m_CollisionDetection: 0
@@ -21704,7 +21648,6 @@ GameObject:
   m_Component:
   - component: {fileID: 964582050}
   - component: {fileID: 964582052}
-  - component: {fileID: 964582051}
   m_Layer: 0
   m_Name: 06_20_2017_Small Wings
   m_TagString: smallFlower
@@ -21727,19 +21670,6 @@ Transform:
   m_Father: {fileID: 189815164}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &964582051
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 964582049}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: -3.7, y: 0, z: 0}
 --- !u!95 &964582052
 Animator:
   serializedVersion: 3
@@ -22410,7 +22340,6 @@ GameObject:
   m_Component:
   - component: {fileID: 991825754}
   - component: {fileID: 991825756}
-  - component: {fileID: 991825755}
   m_Layer: 0
   m_Name: 06_20_2017_Small Wings
   m_TagString: smallFlower
@@ -22433,19 +22362,6 @@ Transform:
   m_Father: {fileID: 570822052}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &991825755
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 991825753}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: -3.7, y: 0, z: 0}
 --- !u!95 &991825756
 Animator:
   serializedVersion: 3
@@ -23751,7 +23667,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1048807345}
   - component: {fileID: 1048807347}
-  - component: {fileID: 1048807346}
   m_Layer: 0
   m_Name: 06_20_2017_Large Wings
   m_TagString: Untagged
@@ -23774,19 +23689,6 @@ Transform:
   m_Father: {fileID: 616459649}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &1048807346
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1048807344}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.9
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: -4.7, y: 0, z: 0}
 --- !u!95 &1048807347
 Animator:
   serializedVersion: 3
@@ -26063,7 +25965,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 6
   m_CollisionDetection: 0
@@ -29205,7 +29107,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1304732997}
   - component: {fileID: 1304732999}
-  - component: {fileID: 1304732998}
   m_Layer: 0
   m_Name: 06_20_2017_Small Wings
   m_TagString: smallFlower
@@ -29228,19 +29129,6 @@ Transform:
   m_Father: {fileID: 1815559268}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &1304732998
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1304732996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: -3.7, y: 0, z: 0}
 --- !u!95 &1304732999
 Animator:
   serializedVersion: 3
@@ -33495,7 +33383,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1450037738}
   - component: {fileID: 1450037740}
-  - component: {fileID: 1450037739}
   m_Layer: 0
   m_Name: 06_20_2017_Large Wings
   m_TagString: Untagged
@@ -33518,19 +33405,6 @@ Transform:
   m_Father: {fileID: 1731218779}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &1450037739
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450037737}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.9
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: -4.7, y: 0, z: 0}
 --- !u!95 &1450037740
 Animator:
   serializedVersion: 3
@@ -38399,7 +38273,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 6
   m_CollisionDetection: 0
@@ -43668,7 +43542,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1875260850}
   - component: {fileID: 1875260852}
-  - component: {fileID: 1875260851}
   m_Layer: 0
   m_Name: 06_20_2017_Large Wings
   m_TagString: Untagged
@@ -43691,19 +43564,6 @@ Transform:
   m_Father: {fileID: 778878879}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &1875260851
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1875260849}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.9
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: -4.7, y: 0, z: 0}
 --- !u!95 &1875260852
 Animator:
   serializedVersion: 3
@@ -45876,7 +45736,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 6
   m_CollisionDetection: 0

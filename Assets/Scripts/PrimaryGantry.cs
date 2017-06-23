@@ -83,6 +83,7 @@ public class PrimaryGantry : MonoBehaviour
 				return true;
             }
 			if (primaryGantry.transform.localPosition.z > zBoundPos - 2){
+				print (true);
 				return true;
             }
 			float difference = Mathf.Abs(primaryGantry.transform.localPosition.z - obj.transform.localPosition.z);
