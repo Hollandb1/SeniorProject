@@ -42,7 +42,8 @@ public class PrimaryGantry : MonoBehaviour
         beamMoveVector = new Vector3(0, 0, 1);
         zBoundPos = mPrimaryGantryPosBound.transform.localPosition.z;
 		zBoundNeg = mPrimaryGantryNegBound.transform.localPosition.z;
-
+		print (zBoundNeg);
+		print(zBoundPos);
 		mMovementList = new Vector3[PRIMARY_GANTRY_SECTIONS][];
 		mSpeedList = new float[PRIMARY_GANTRY_SECTIONS][];
 
@@ -109,7 +110,7 @@ public class PrimaryGantry : MonoBehaviour
 	private void SetObjectSpeed(int index){
 		System.Random rand = new System.Random();
         for (int i = 0; i < mSpeedList[index].Length; i++){
-			float speed = (float)(rand.NextDouble ()) + speedOffset;
+			float speed = (float)(.5 + speedOffset);
 			mSpeedList [index][i] = speed;
 		}
 	}
