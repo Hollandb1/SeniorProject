@@ -17,6 +17,16 @@ TagManager:
   - primaryGantry2
   - primaryGantry3
   - primaryGantry4
+  - secondaryGantry0
+  - secondaryGantry1
+  - secondaryGantry2
+  - secondaryGantry3
+  - secondaryGantry4
+  - section0
+  - section1
+  - section2
+  - section3
+  - textBox
   layers:
   - Default
   - TransparentFX
