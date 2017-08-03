@@ -27,6 +27,8 @@ TagManager:
   - section2
   - section3
   - textBox
+  - mesh
+  - Flower
   layers:
   - Default
   - TransparentFX

@@ -29,8 +29,8 @@ using NAudio.Wave;
 class AudioMachineLearning : MonoBehaviour
 {
     public Text Screen;
-    private const string DESIRED_AUDIO_PATH = "/Users/gagnej3/School/4th_Year/Summer_2017/Senior_Design/Audio/Desired";
-    private const string UNDESIRED_AUDIO_PATH = "/Users/gagnej3/School/4th_Year/Summer_2017/Senior_Design/Audio/Undesired";
+    private const string DESIRED_AUDIO_PATH = "/Users/hollandb1/Documents/Summer17/SeniorProject/Audio/Desired";
+    private const string UNDESIRED_AUDIO_PATH = "/Users/hollandb1/Documents/Summer17/SeniorProject/Audio/Undesired";
     private readonly int DESIRED = 1;
     private readonly int UNDESIRED = 0;
     private string _guiText = "";
